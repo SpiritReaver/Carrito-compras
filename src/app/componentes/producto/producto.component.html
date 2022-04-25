@@ -1,0 +1,44 @@
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a (click)="filter('')">
+                <img style="height:50px ; width: 100px; margin-top: 5px;" src="https://staminamarketing.com/blog/wp-content/uploads/2020/06/tipos-de-productos-woocommerce.jpg" alt="">
+                <h6>Todos</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('electronics')">
+                <img style="height:50px ; width: 100px; margin-top: 5px;" src="https://www.laportadacanada.com/userfiles/images/tecnologia.jpg" alt="">
+                <h6>Electronicos</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('fashion')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" alt="">
+                <h6>Ropa/Moda</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('jewelery')">
+                <img style="height:50px ; width: 100px; margin-top: 5px;" src="https://diariodecolima.com/contenido/noticias/27alhajas.jpg" alt="">
+                <h6>Joyeria</h6>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <ng-container alignitems="center" *ngFor="let item of filterCategory | filter:searchKey:'title'">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="" alignitems="center">
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 30ch; font-size:15px">
+                    {{item.title}}</h5>
+
+                <p><strong>Precio:</strong> ${{item.price}}</p>
+                <button class="btn btn-success" (click)=addtocart(item)>Agregar al carrito</button>
+            </div>
+        </ng-container>
+
+    </div>
+</div>
