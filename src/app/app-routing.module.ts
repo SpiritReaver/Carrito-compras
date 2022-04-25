@@ -4,9 +4,9 @@ import { CarritoComponent } from './componentes/carrito/carrito.component';
 import { ProductoComponent } from './componentes/producto/producto.component';
 
 const routes: Routes = [
-  {path:'', redirectTo:'products',pathMatch:'full'},
-  {path:'products', component: ProductoComponent},
-  {path:'cart', component: CarritoComponent}
+  {path:'', redirectTo:'productos',pathMatch:'full'},
+  {path:'productos', component: ProductoComponent},
+  {path:'carrito', component: CarritoComponent}
 ];
 
 @NgModule({
