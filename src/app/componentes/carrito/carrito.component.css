@@ -1,7 +1,7 @@
 .card {
-    height: 60vh;
+    height: 80vh;
     margin: 25px;
-    padding: 25px;
+    padding: 30px;
 }
 
 .center img {
@@ -35,8 +35,8 @@ h6 {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: .25rem;
+    border: 2px solid rgba(90, 245, 59, 0.2);
+    border-radius: .35rem;
 }
 
 .center .btn {
