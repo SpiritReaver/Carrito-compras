@@ -1,20 +1,22 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
 export const environment = {
-  production: true,
+  production:true,
   firebaseConfig: {
-    apiKey: "AIzaSyCk9KZ7N_M8y8UqMgLHpkGRLli8inBFXHM",
-    authDomain: "tpgrupalpps2020.firebaseapp.com",
-    databaseURL: "https://tpgrupalpps2020.firebaseio.com",
-    projectId: "tpgrupalpps2020",
-    storageBucket: "tpgrupalpps2020.appspot.com",
-    messagingSenderId: "219733044318",
-    appId: "1:219733044318:web:a8264e60400c93b45558cf",
-    measurementId: "G-PJHKS2KP1Q"
-  }
+  apiKey: "AIzaSyCU-f44Ubm96lm8lL-9Z1dKn0fHq4BDAUE",
+  authDomain: "parcial2ndo.firebaseapp.com",
+  databaseURL: "https://parcial2ndo-default-rtdb.firebaseio.com",
+  projectId: "parcial2ndo",
+  storageBucket: "parcial2ndo.appspot.com",
+  messagingSenderId: "1033455468126",
+  appId: "1:1033455468126:web:9ee1222a9452ea2bff7ecf",
+  measurementId: "G-7LWKTE1VWG"}
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
