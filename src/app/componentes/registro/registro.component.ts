@@ -43,7 +43,7 @@ export class RegistroComponent implements OnInit {
         this.database.crear('users', this.usuario);
       };
 
-      this.router.navigate(['/panelDeControl']);
+      this.router.navigate(['/productos']);
     }).catch(err => {
       console.log(err)
     })
