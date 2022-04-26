@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
         alert("Datos incorrectos, si no tienes cuenta ,registrate!");
         return;
       };
-      this.router.navigate(['/panelDeControl'])
+      this.router.navigate(['/productos'])
     }).catch(err=>{
       console.log(err)
     })
