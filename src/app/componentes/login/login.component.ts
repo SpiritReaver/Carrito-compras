@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
     this.authService.login(email, password).then(user => {
       console.log("Bienvenido ", user);
       if(!user) {
-        alert("Datos incorrectos, si no tienes cuenta ,registrate!");
+        alert("Datos incorrectos!");
         return;
       };
       this.router.navigate(['/productos'])
