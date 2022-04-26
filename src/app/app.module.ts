@@ -10,6 +10,13 @@ import { ProductoComponent } from './componentes/producto/producto.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FilterPipe } from './pipes/filtro.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './componentes/login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RegistroComponent } from './componentes/registro/registro.component';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from 'src/environments/environment';
+
+
 
 @NgModule({
   declarations: [
@@ -17,14 +24,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     CarritoComponent,
     ProductoComponent,
-    FilterPipe
+    FilterPipe,
+    LoginComponent,
+    RegistroComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
